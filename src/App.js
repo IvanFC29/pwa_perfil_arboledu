@@ -1,6 +1,7 @@
-//import logo from './logo.svg';
+
 import React, { useEffect, useState } from 'react';
-import WelcomeCarousel from './components/WelcomeCarousel';
+import Home from './components/Home';
+import './App.css';
 
 function App() {
   // Instalador
@@ -32,11 +33,12 @@ function App() {
   return (
      <div className='App'>
       <header className="App-header">
-        <h1>Mi PWA</h1>
-        {showInstallButton && (
-          <button onClick={handleInstallClick}>Instalar PWA</button>
-        )}
-        <WelcomeCarousel />
+        <div id="div-button">
+          {showInstallButton && (
+            <button class="install-button" onClick={handleInstallClick}>Instalar ArbolEdu</button>
+          )}
+        </div>     
+        <Home />
       </header>  
      </div>
   );
