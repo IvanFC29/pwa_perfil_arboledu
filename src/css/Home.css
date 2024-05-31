@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: #b6d7a8;
+    margin: 5%;
 }
 
 .carousel {
@@ -34,10 +35,31 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
+#botonesHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.init-button{
+    background-color: #e69138;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  }
+  
+
 /* Para tamaños en dispositivos móviles */
-@media only screen and (max-width: 650px) {
+@media (max-width: 600px) {
     .carousel{
         width: 60%;
+        max-width: 400px;
         border: none;
     }
 
@@ -47,5 +69,12 @@
 
     .carousel-slide p{
         font-size: 14px;
+    }
+
+    #botonesHome{
+        flex-direction: column;
+    }
+    .init-button {
+        margin: 5px;
     }
 }

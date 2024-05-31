@@ -1,10 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import '../css/Home.css';
 
 const Home = () => {
+    const navegate = useNavigate();
+
     const settings = {
         dots: true,
         infinite: true,
@@ -12,6 +15,10 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true
+    };
+
+    const handleRegisterClick = () =>{
+        navegate('/register');
     };
 
     return (
@@ -27,6 +34,10 @@ const Home = () => {
                 </div>
                 {/* Agrega más slides según sea necesario */}
             </Slider>
+            <div id="botonesHome">
+                <button class="init-button" onClick={handleRegisterClick}>Registrate</button>
+                <button class="init-button">Aprende</button>
+            </div>
         </div>
     );
 };

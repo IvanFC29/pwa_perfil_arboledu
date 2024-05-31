@@ -3,8 +3,8 @@
 }
 
 .App-header {
-  background-color: #b6d7a8;
-  min-height: 80vh;
+  background-color: #6aa84f;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,9 +13,16 @@
   color: white;
 }
 
+.App-seccion{
+  background-color: #b6d7a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .install-button {
-  background-color: #ffe599;
-  border: 2px solid #4CAF50;
+  background-color: #e69138;
+  border: 2px solid white;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
@@ -24,3 +31,12 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
+#parrafoInstall{
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .App-header{
+    background-color: #b6d7a8;
+  }
+}
