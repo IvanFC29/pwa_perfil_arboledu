@@ -1,3 +1,8 @@
+#cabecera-register{
+    display: flex;
+    flex-direction: row !important;
+}
+
 .register-container {
     display: flex;
     flex-direction: column;

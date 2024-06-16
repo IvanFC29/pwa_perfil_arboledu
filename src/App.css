@@ -1,16 +1,9 @@
-.App {
-  text-align: center;
+body{
+  background-color: #b6d7a8;
 }
 
-.App-header {
-  background-color: #6aa84f;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App {
+  text-align: center;
 }
 
 .App-seccion{

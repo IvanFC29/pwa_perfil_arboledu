@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import '../css/Home.css';
+import Installer from './Installer.js';
 
 const Home = () => {
     const navegate = useNavigate();
@@ -23,6 +24,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
+            <Installer />
             <Slider {...settings} className="carousel">
                 <div className="carousel-slide">
                     <img src="./img/slide1.png" alt="Plant Care" />
@@ -34,6 +36,7 @@ const Home = () => {
                 </div>
                 {/* Agrega más slides según sea necesario */}
             </Slider>
+            <br></br>
             <div id="botonesHome">
                 <button class="init-button" onClick={handleRegisterClick}>Registrate</button>
                 <button class="init-button">Aprende</button>

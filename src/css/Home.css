@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .init-button{
@@ -58,8 +58,8 @@
 /* Para tamaños en dispositivos móviles */
 @media (max-width: 600px) {
     .carousel{
-        width: 60%;
-        max-width: 400px;
+        width: 55%;
+        max-width: 350px;
         border: none;
     }
 
