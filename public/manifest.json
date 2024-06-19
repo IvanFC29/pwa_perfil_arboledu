@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "App educativa para el seguimiento y cuidado de plantas y \u00e1rboles",
+    "name": "App educativa para el seguimiento y cuidado de plantas y arboles",
     "short_name": "ArbolEdu",
-    "description": "ArbolEdu - App educativa para el seguimiento y cuidado de plantas y \u00e1rboles",
+    "description": "ArbolEdu - App educativa para el seguimiento y cuidado de plantas y arboles",
     "icons": [
         {
             "src": "icon.ico",

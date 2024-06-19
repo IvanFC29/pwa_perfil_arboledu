@@ -1,0 +1,14 @@
+#cabecera-inicio{
+    display: flex;
+    flex-direction: row !important;
+}
+
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6d7a8;
+    padding: 60px;
+    text-align: center;
+}

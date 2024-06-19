@@ -13,23 +13,19 @@ body{
   justify-content: center;
 }
 
-.install-button {
-  background-color: #e69138;
-  border: 2px solid white;
-  border-radius: 5px;
+.inicio-container {
+  padding: 20px;
+}
+
+.agregar-planta-button {
+  background-color: #4caf50;
+  color: white;
   padding: 10px 20px;
-  font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-#parrafoInstall{
-  color: black;
-}
-
-@media (max-width: 600px) {
-  .App-header{
-    background-color: #b6d7a8;
-  }
+.agregar-planta-button:hover {
+  background-color: #45a049;
 }

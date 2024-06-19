@@ -1,12 +1,21 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import axios from 'axios';
 import "../css/Register.css";
 
 const Register = () => {
-    let [nombre, setNombre] = useState('');
-    let [clave, setClave] = useState('');
-    let [correo, setCorreo] = useState('');
+    let [nombre, setNombre] = useState(''); // Actualizar nombre
+    let [clave, setClave] = useState('');  // Actualizar password
+    let [correo, setCorreo] = useState('');  // Actualizar correo
 
+    // Navegacion entre paginas 
+    const navegate = useNavigate();
+
+    const handleRegisterClick = () =>{
+        navegate('/mi-jardin');
+    };
+
+    //Verificacion de registro de un usuario
     const handleVerificar = async(e) => {
         e.preventDefault();
         const respuesta = await axios.post('http://localhost:3000/api/register', {
@@ -42,7 +51,7 @@ const Register = () => {
                     <label className="form-label" htmlFor="correo">Correo:</label>
                     <input className="form-control" type="email" id="correo" name="correo" value={correo} onChange={(e) => setCorreo(e.target.value)} required></input>
 
-                    <button type="submit" className="confirm-button">Confirmar</button>
+                    <button type="submit" className="confirm-button" onClick={handleRegisterClick}>Confirmar</button>
                 </form>
         </div>
         

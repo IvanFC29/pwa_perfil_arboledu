@@ -1,6 +1,5 @@
-// Installer.js
 import React, { useEffect, useState } from 'react';
-import '../css/Installer.css'; // Si tienes estilos específicos para este componente
+import '../css/Installer.css'; 
 
 function Installer() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);

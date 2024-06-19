@@ -1,0 +1,10 @@
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.app-layout{
+  width: 100%;
+}

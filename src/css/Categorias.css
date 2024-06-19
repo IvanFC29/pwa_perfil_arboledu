@@ -1,0 +1,27 @@
+.target-categorias {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 600px) {
+    .categorias-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    .categorias-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.categoria-card {
+    cursor: pointer;
+}
+
+.btn-volver {
+    margin-top: 16px;
+    background-color: #e69138;
+    border: 2px solid white;
+}
