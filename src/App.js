@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home';
-import Register from './components/Register';
+//import Register from './components/Register';
 import MiJardin from './components/MiJardin';
 import Aprende from './components/Aprende';
 import Consejos from './components/Consejos';
@@ -17,7 +17,7 @@ function App() {
       <div className="App-seccion">     
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/register' element={<Register />} />
+          {/*<Route path='/register' element={<Register />} />*/}
           <Route 
             path='/mi-jardin' 
             element={
@@ -42,7 +42,38 @@ function App() {
               </Layout>
             } 
           />
-          <Route path='/categorias' element={<Categorias />} />
+          <Route 
+            path='/categorias' 
+            element={
+              <Layout>
+                <Categorias />
+              </Layout>
+            } 
+          />
+          <Route 
+            path='/categorias/frutales' 
+            element={
+              <Layout>
+               
+                </Layout>
+              } 
+            />
+            <Route 
+              path='/categorias/flores' 
+              element={
+                <Layout>
+                 
+                </Layout>
+              } 
+            />
+            <Route 
+              path='/categorias/arboles' 
+              element={
+                <Layout>
+                 
+                </Layout>
+              } 
+            />
         </Routes>
       </div>
       
@@ -67,14 +98,6 @@ export default App;
             element={
               <Layout>
                
-                </Layout>
-              } 
-            />
-            <Route 
-              path='/categorias/verduras' 
-              element={
-                <Layout>
-                 
                 </Layout>
               } 
             />

@@ -15,7 +15,7 @@ const Home = () => {
     const navegate = useNavigate();
 
     const handleRegisterClick = () =>{
-        navegate('/register');
+        navegate('/mi-jardin');
     };
 
     // Parte del Carousel
@@ -43,8 +43,8 @@ const Home = () => {
             </Slider>
             <br></br>
             <div id="botonesHome">
-                <button class="init-button" onClick={handleRegisterClick}>Registrate</button>
-                <button class="init-button">Aprende</button>
+                <button class="init-button" onClick={handleRegisterClick}>Ir a mi jardin</button>
+            
             </div>
         </div>
     );

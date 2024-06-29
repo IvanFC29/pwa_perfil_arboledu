@@ -21,24 +21,23 @@ const BottomNav = () => {
             setValor(2);
         }
     }, [location.pathname]);
-    
-    useEffect(() => {
-        if (valor === 0) {
+
+    const handleNavChange = (event, newValue) => {
+        setValor(newValue);
+        if (newValue === 0) {
             navegacion('/mi-jardin');
-        } else if (valor === 1) {
+        } else if (newValue === 1) {
             navegacion('/consejos');
-        } else if (valor === 2) {
+        } else if (newValue === 2) {
             navegacion('/aprende');
         }
-    }, [valor, navegacion]);
+    };
 
     return (
         <BottomNavigation
             showLabels
             value={valor}
-            onChange={(event, newValue) => {
-                setValor(newValue);
-            }}
+            onChange={handleNavChange}
             className="bottom-navigation"
         >
             <BottomNavigationAction label="Mi Jardin" icon={<NatureIcon />} />
