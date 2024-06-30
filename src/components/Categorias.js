@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
 
 import "../css/Categorias.css";
 
@@ -12,6 +12,7 @@ const categorias = [
     { title: 'Frutales', image: './img/frutales.png', path: '/categorias/frutales' },
     { title: 'Flores', image: './img/flores.png', path: '/categorias/flores' },
     { title: 'Arboles', image: './img/arboles.png', path: '/categorias/arboles' },
+    { title: 'Arbustos', image: './img/arboles.png', path: '/categorias/arbustos' }
 ];
 
 const Categorias = () => {
@@ -23,7 +24,7 @@ const Categorias = () => {
 
     return(
       <div className="inicio-container">
-       <div id="cabecera-inicio">
+        <div id="cabecera-inicio">
            <img src="icon-192x192.png" width="64px" alt="logo"></img>
              <p>ArbolEdu</p>
         </div>

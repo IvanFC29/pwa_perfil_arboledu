@@ -1,0 +1,96 @@
+{
+    "frutales": [
+      {
+        "id": "1",
+        "nombre": "Limón",
+        "imagen": "/img/categ-frutas/limon.png",
+        "descripcion": "El limón es una fruta..."
+      },
+      {
+        "id": "2",
+        "nombre": "Manzana",
+        "imagen": "/img/categ-frutas/manzana.png",
+        "descripcion": "La manzana es una fruta..."
+      },
+      {
+        "id": "3",
+        "nombre": "Maracuya",
+        "imagen": "/img/categ-frutas/maracuya.png",
+        "descripcion": "La maracuya es una fruta..."
+      },
+      {
+        "id": "4",
+        "nombre": "Papaya",
+        "imagen": "/img/categ-frutas/papaya.png",
+        "descripcion": "La manzana es una fruta..."
+      
+      },
+      {
+        "id": "5",
+        "nombre": "Uva",
+        "imagen": "/img/categ-frutas/uva.png",
+        "descripcion": "La uva es una fruta..."
+      }
+    ],
+
+    "flores": [
+      {
+        "id": "1",
+        "nombre": "Diente de Leon",
+        "imagen": "/img/categ-flores/dienteLeon.png",
+        "descripcion": "El diente de leon es una flor..."
+      },
+      {
+        "id": "2",
+        "nombre": "Girasol",
+        "imagen": "/img/categ-flores/girasol.png",
+        "descripcion": "El girasol es una flor..."
+      },
+      {
+        "id": "3",
+        "nombre": "Jazmin",
+        "imagen": "/img/categ-flores/jazmin.png",
+        "descripcion": "El jazmin es una flor..."
+      },
+      {
+        "id": "4",
+        "nombre": "Margarita",
+        "imagen": "/img/categ-flores/margarita.png",
+        "descripcion": "La margarita es una flor..."
+      },
+      {
+        "id": "5",
+        "nombre": "Manzanilla",
+        "imagen": "/img/categ-flores/manzanilla.png",
+        "descripcion": "El jazmin es una flor..."
+      },
+      {
+        "id": "6",
+        "nombre": "Rosa",
+        "imagen": "/img/categ-flores/rosa.png",
+        "descripcion": "La rosa es una flor..."
+      }        
+    ],
+
+    "arboles": [
+    {
+      "id": "1",
+      "nombre": "Pino",
+      "descripcion": "El pino es un género de plantas arbóreas de la familia de las pináceas.",
+      "imagen": "/img/categ-arbol/pino.png"
+    }
+    ],
+    
+    "arbustos": [
+    {
+      "id": "1",
+      "nombre": "Pingo de oro",
+      "descripcion": "El boj es un arbusto perennifolio de la familia de las buxáceas.",
+      "imagen": "/img/categ-arbusto/pingo.png"
+    }
+   
+  ]
+    
+}
+ 
+ 
