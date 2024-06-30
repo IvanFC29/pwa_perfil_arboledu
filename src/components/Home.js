@@ -43,7 +43,7 @@ const Home = () => {
             </Slider>
             <br></br>
             <div id="botonesHome">
-                <button class="init-button" onClick={handleRegisterClick}>Ir a mi jardin</button>
+                <button class="init-button" onClick={handleRegisterClick}>Ir a Mi Jardin </button>
             
             </div>
         </div>
