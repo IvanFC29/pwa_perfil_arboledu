@@ -16,6 +16,7 @@ const Planta = () => {
            <img src="/icon-192x192.png" width="64px" alt="logo"></img>
              <p>ArbolEdu</p>
         </div>
+        <hr />
         <div id="contenido">
             {planta ? (
             <>

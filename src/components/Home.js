@@ -31,6 +31,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <Installer />
+            <hr />
             <Slider {...settings} className="carousel">
                 <div className="carousel-slide">
                     <img src="./img/slide1.png" alt="Plant Care" />

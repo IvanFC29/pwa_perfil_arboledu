@@ -58,17 +58,18 @@
 /* Para tamaños en dispositivos móviles */
 @media (max-width: 600px) {
     .carousel{
-        width: 55%;
+        width: 50%;
         max-width: 350px;
         border: none;
     }
 
     .carousel-slide img{
-        max-width: 80%;
+        max-width: 90%;
+        height:max-content;
     }
 
     .carousel-slide p{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #botonesHome{

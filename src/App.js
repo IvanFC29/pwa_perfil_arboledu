@@ -10,6 +10,7 @@ import Layout from './components/Layout'
 import Categorias from './components/Categorias';
 import Elemento from './components/Elemento';
 import Planta from './components/Plantas';
+import Recordatorios from './components/Recordatorios';
 import { MiJardinProvider } from './context/MiJardinContenedor';
 import './App.css';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/aprende" element={<Layout><Aprende /></Layout>} />
           <Route path="/consejos" element={<Layout><Consejos /></Layout>} />
           <Route path="/categorias" element={<Layout><Categorias /></Layout>} />
+          <Route path="/recordatorios" element={<Layout><Recordatorios /></Layout>} />
           <Route path="/categorias/:categoria" element={<Layout><Elemento /></Layout>} />  
           <Route path="/categorias/:categoria/:id" element={<Layout><Planta /></Layout>} /> 
         </Routes>

@@ -12,7 +12,7 @@ const categorias = [
     { title: 'Frutales', image: './img/frutales.png', path: '/categorias/frutales' },
     { title: 'Flores', image: './img/flores.png', path: '/categorias/flores' },
     { title: 'Arboles', image: './img/arboles.png', path: '/categorias/arboles' },
-    { title: 'Arbustos', image: './img/arboles.png', path: '/categorias/arbustos' }
+    { title: 'Arbustos', image: './img/arbusto.png', path: '/categorias/arbustos' }
 ];
 
 const Categorias = () => {
@@ -30,7 +30,7 @@ const Categorias = () => {
         </div>
         <hr />
         <div id="contenido">
-            <h2>Categorias</h2>
+            <h2>Categorías</h2>
             <div className="target-categorias">
                 {categorias.map((categoria, index) => (
                     <Card key={index} className="categoria-card" onClick={() => targetaClic(categoria.path)}>

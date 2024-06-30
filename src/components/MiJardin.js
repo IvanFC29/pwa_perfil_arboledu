@@ -6,6 +6,7 @@ import { useMiJardin } from '../context/MiJardinContenedor';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 const MiJardin  = () => {
     const navegacion = useNavigate();
@@ -13,6 +14,10 @@ const MiJardin  = () => {
 
     const cambiarVista = () =>{
         navegacion('/categorias');
+    };
+
+    const irRecordatorios = () =>{
+        navegacion('/recordatorios');
     };
 
     return(
@@ -32,7 +37,7 @@ const MiJardin  = () => {
                 ):(
                   <div id='jardin'> 
                     <button className="agregar-planta-button" onClick={cambiarVista}>+ Agregar Planta</button>
-                    
+                    <br></br>
                     <div className="target-categorias">
                         {misPlantas.map((planta, index) => (
                             <Card key={index} className="categoria-card">
@@ -41,8 +46,10 @@ const MiJardin  = () => {
                                         <img id='img_jardin' src={planta.imagen} alt={planta.nombre} />
                                     </CardContent>
                                     <CardContent className="categoria-content"> 
-                                        <p>{planta.nombre}</p>  
-                                        <button className="agregar-recordatorio-button" onClick={cambiarVista}>Agregar recordatorio</button>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            <p>{planta.nombre}</p>
+                                        </Typography>
+                                        <button className="agregar-recordatorio-button" onClick={irRecordatorios}>Agregar recordatorio</button>
                                     </CardContent>
                                 </CardActionArea>   
                             </Card>    

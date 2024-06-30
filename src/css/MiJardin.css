@@ -18,6 +18,7 @@
     background-color: #4caf50;
     color: white;
     padding: 10px 20px;
+    margin-bottom: 4%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -44,11 +45,11 @@
 #img_jardin{
     width: 100px !important; 
     height: auto;
-    margin-right: 16px;
+    padding: 16px;
 }
 
 .target-categorias {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -70,10 +71,11 @@
     cursor: pointer;
     display: inline-flex;
     align-items: center;
+    flex-direction: row;
     padding: 16px;
 }
 
 .categoria-card .categoria-content {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
 }
